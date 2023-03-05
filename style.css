@@ -1,0 +1,74 @@
+/* Branco: #FFFFFF
+Preto: #000000
+Cinza claro: #E8E8E8
+Cinza escuro: #333333
+Verde claro: #7AC74C
+Verde escuro: #4E8234 */
+
+
+body {
+  
+}
+/* titulo */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img {
+    height: 40px;
+}
+
+/* barra de pesquisa */
+div#busca {
+    text-align: center;
+}
+input#pesquisa {
+    width: 80vw;
+    border-radius: 10px;
+    padding: 5px;
+} 
+
+/* conteudo dos pokemons */
+main {
+    text-align: center;
+}
+
+section {
+    display: block;
+    width: 70vw;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px; 
+    margin: 20px auto 20px auto;
+
+    
+}   
+.poke-img {
+    height:  400px;
+}
+h2 {
+    font-size: 20pt;
+}
+section > span{
+    font-size: 15pt;
+    padding: 10px;
+}
+.grass {
+    background-color: aquamarine;
+}
+.poison {
+    background-color: blueviolet;
+}
+.fire {
+    background-color: rgb(210, 86, 33);
+}
+.water {
+    background-color: rgb(61, 168, 235);
+}
+.flying {
+    background-color: rgb(95, 95, 95);
+}
+.bug {
+    background-color: rgb(72, 145, 120) ;
+}
