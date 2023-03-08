@@ -7,24 +7,30 @@ Verde escuro: #4E8234 */
 
 
 body {
-  
+  background-color: rgb(37, 37, 37);
+  color: white;
+
 }
 /* titulo */
 header {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 img {
-    height: 40px;
+    max-width: 100%;
+    height: auto;
+
 }
 
 /* barra de pesquisa */
 div#busca {
     text-align: center;
+    
 }
 input#pesquisa {
-    width: 80vw;
+    width: 65vw;
     border-radius: 10px;
     padding: 5px;
 } 
@@ -41,11 +47,13 @@ section {
     padding: 10px;
     border-radius: 10px; 
     margin: 20px auto 20px auto;
-
+    background-color: white;
+    color: black;
     
 }   
 .poke-img {
     height:  400px;
+
 }
 h2 {
     font-size: 20pt;
