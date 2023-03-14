@@ -57,11 +57,13 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.594);
     border-radius: 10px;
     display: none;
+    color: white;
   }
 
   .lista:hover { 
     background-color: rgba(181, 181, 181, 0.546);
   }
+
   /* conteudo dos pokemons */
   main {
       text-align: center;
@@ -71,35 +73,88 @@ body {
       margin: auto;
   }
   
-  section {
-      display: block;
-      width: 30vw;
-      height: auto;
-      padding: 10px;
-      border-radius: 10px; 
-      margin: 20px auto 20px auto;
-      background-color: white;
-      color: black;
-      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.525);
-      transition: background-color 0.5s;
+  .conteiner {
     
-  }   
-  section:hover {
+    padding: 10px;
+    height: auto;
+    background-color: rgba(0, 255, 255, 0);
+   
+  
+    margin: 20px auto 20px auto;
+    border-radius: 10px; 
+    color: black;
+  }
+
+  section {
+    width: 30vw;
+    height: 80vh;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.525);
+    transition: background-color 0.5s;
+  } 
+    
+ section:hover {
     background-color: rgba(255, 255, 255, 0.637);
   }
 
+
+/* configuração  do conteudo das sections  */
+  section.tras {
+    display: none;
+  }
+  div.specs {
+    background-color: rgb(61, 235, 177);
+    display: flex;
+    border-radius: 10px;
+    width: 80%;
+    margin: 10px auto auto auto;
+    justify-content: space-between;
+    
+  } 
+  div > span {
+    font-size: 10pt;
+    padding: 8px;
+    margin-left: 5px;
+    color: white;
+    
+  }
+ 
+  ul > li {
+    list-style: none;
+    margin-top: 36px;
+  }
+  h4 {
+    color: white;
+  }
+
+ .conteudo {
+  display: none;
+ 
+ 
+ }
+
+
+  /* configuração das imagens */
   .poke-img {
       height:  400px;
   
   }
+  .poke-img-tras {
+    height: 200px;
+  }
+
+/* conteudo além das imgs */
   h2 {
       font-size: 20pt;
   }
   section > span{
       font-size: 15pt;
       padding: 10px;
+      margin-left: 5px;
+      color: white;
       
   }
+
+  /* configuração dos tipos pokemons */
   .grass {
       background-color: aquamarine;
   }
@@ -117,5 +172,20 @@ body {
   }
   .bug {
       background-color: rgb(72, 145, 120) ;
+  }
+  .ice {
+      background-color: rgb(109, 235, 237);
+  }
+  .eletric {
+      background-color: rgb(251, 255, 0);
+      color: black;
+  }
+  .psychic {
+    background-color: rgb(189, 43, 226);
+  }
+  .rock {
+    background-color: rgb(105, 92, 24);
+  }.ground {
+    background-color: rgb(231, 202, 57);
   }
 }
