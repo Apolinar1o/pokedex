@@ -24,17 +24,39 @@ img {
 
 }
 
-/* barra de pesquisa */
-div#busca {
+ /* barra de pesquisa */
+ div#busca {
     text-align: center;
     
 }
 input#pesquisa {
     width: 65vw;
+    height: 30px;
     border-radius: 10px;
-    padding: 5px;
+    padding: 20px;
+    font-size: 15pt;
 } 
+ul#search-results {
+  max-height: 140px;
+  overflow: auto;
+ 
+}
 
+.lista {
+  width: 62vw;
+  padding: 10px;
+  background-color: rgba(130, 130, 130, 0.546);
+  margin: auto;
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.594);
+  border-radius: 10px;
+  display: none;
+  color: white;
+}
+
+.lista:hover { 
+  background-color: rgba(181, 181, 181, 0.546);
+}
 /* conteudo dos pokemons */
 main {
     text-align: center;
@@ -62,21 +84,94 @@ section > span{
     font-size: 15pt;
     padding: 10px;
 }
-.grass {
-    background-color: aquamarine;
-}
-.poison {
-    background-color: blueviolet;
-}
-.fire {
-    background-color: rgb(210, 86, 33);
-}
-.water {
-    background-color: rgb(61, 168, 235);
-}
-.flying {
-    background-color: rgb(95, 95, 95);
-}
-.bug {
-    background-color: rgb(72, 145, 120) ;
-}
+/* configuração  do conteudo das sections  */
+section.tras {
+    display: none;
+  }
+  div.specs {
+    background-color: rgb(61, 235, 177);
+    display: flex;
+    border-radius: 10px;
+    width: 80%;
+    margin: 10px auto auto auto;
+    justify-content: space-between;
+    
+  } 
+  div > span {
+    font-size: 10pt;
+    padding: 8px;
+    margin-left: 5px;
+    color: white;
+    
+  }
+ 
+  ul > li {
+    list-style: none;
+    margin-top: 36px;
+  }
+  h4 {
+    color: white;
+  }
+
+ .conteudo {
+  display: none;
+ 
+ 
+ }
+
+
+  /* configuração das imagens */
+  .poke-img {
+      height:  400px;
+  
+  }
+  .poke-img-tras {
+    height: 200px;
+  }
+
+/* conteudo além das imgs */
+  h2 {
+      font-size: 20pt;
+  }
+  section > span{
+      font-size: 15pt;
+      padding: 10px;
+      margin-left: 5px;
+      color: white;
+      
+  }
+
+  /* configuração dos tipos pokemons */
+  .grass {
+      background-color: aquamarine;
+  }
+  .poison {
+      background-color: blueviolet;
+  }
+  .fire {
+      background-color: rgb(210, 86, 33);
+  }
+  .water {
+      background-color: rgb(61, 168, 235);
+  }
+  .flying {
+      background-color: rgb(95, 95, 95);
+  }
+  .bug {
+      background-color: rgb(72, 145, 120) ;
+  }
+  .ice {
+      background-color: rgb(109, 235, 237);
+  }
+  .eletric {
+      background-color: rgb(251, 255, 0);
+      color: black;
+  }
+  .psychic {
+    background-color: rgb(189, 43, 226);
+  }
+  .rock {
+    background-color: rgb(105, 92, 24);
+  }.ground {
+    background-color: rgb(231, 202, 57);
+  }
